@@ -23,7 +23,7 @@ button:hover {
 
 ol , ul {
     display: inline-block; /* Makes the list items display inline-block */
-    text-align: center; /* Centers the text of the list item */
+    text-align: left; /* Centers the text of the list item */
 }
 /* Add style for the social link */
 .social-links {
