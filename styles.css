@@ -21,7 +21,7 @@ button:hover {
     background-color: #0056b3;
 }
 
-ol li, ul li {
+ol , ul {
     display: inline-block; /* Makes the list items display inline-block */
     text-align: center; /* Centers the text of the list item */
 }
