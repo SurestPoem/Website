@@ -22,8 +22,9 @@ button:hover {
 }
 
 ol, ul {
+    text-align: left;
     padding-left: 20px;
-    font-size: 1.1em;
+    font-size: 1.5em;
 }
 
 /* Add style for the social link */
