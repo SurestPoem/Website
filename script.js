@@ -4,5 +4,5 @@ function changeText() {
 
 function redirect() {
     window.open("https://youtu.be/dQw4w9WgXcQ?si=oJQ871mySUGnJNl9", "_blank");
-    document.getElementById("text").innerHTML = "That was quite juvenile and Reddit-ass humor mb";
+    document.getElementById("text").innerHTML = "That was quite juvenile and Reddit-ahh humor mb";
 }
