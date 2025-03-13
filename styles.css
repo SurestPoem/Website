@@ -11,12 +11,12 @@ h1 {
 
 #WebStart {
         text-align: center;
-        padding: 10px;
-        margin-top: 40px;
-        margin-bottom: 20px;
-        background-color: #ffc107;
+        padding: 5px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        background-color: #ffffff;
         border-radius: 50px;
-        box-shadow: 0 0 10px rgba(0.1, 0.1, 0.1, 0.1);
+        box-shadow: 5 5 10px rgba(0.1, 0.1, 0.1, 0.1);
 }
 
 button {
@@ -66,8 +66,6 @@ ul {
 }
 
 .profile-pic {
-    width: 500px;
-    height: 500px;
     margin: 50px;
 }
 
