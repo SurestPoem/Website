@@ -9,6 +9,16 @@ h1 {
     color: #333;
 }
 
+#WebStart {
+        text-align: center;
+        padding: 10px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        background-color: #ffc107;
+        border-radius: 50px;
+        box-shadow: 0 0 10px rgba(0.1, 0.1, 0.1, 0.1);
+}
+
 button {
     padding: 10px 20px;
     background-color: #007BFF;
@@ -21,9 +31,16 @@ button:hover {
     background-color: #0056b3;
 }
 
-ol , ul {
+ol {
     display: inline-block; /* Makes the list items display inline-block */
     text-align: left; /* Centers the text of the list item */
+}
+
+ul {
+    list-style-type: none; /* Removes the bullet points from the list */
+    padding: 0; /* Removes the default padding from the list */
+    text-align: center; /* Centers the text of the list */
+    display: inline-block;
 }
 /* Add style for the social link */
 .social-links {
@@ -49,8 +66,8 @@ ol , ul {
 }
 
 .profile-pic {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    margin: 20px;
+    width: 500px;
+    height: 500px;
+    margin: 50px;
 }
+
