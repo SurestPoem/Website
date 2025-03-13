@@ -76,9 +76,3 @@ ul {
     max-width: 960px; /* Optional: set a max width */
     text-align: center; /* Centers text and inline elements inside the container */
 }
-
-img {
-    display: block;         /* Makes the image a block element */
-    margin-left: auto;      /* Automatically calculates the left margin */
-    margin-right: auto;     /* Automatically calculates the right margin */
-}
