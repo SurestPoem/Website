@@ -3,6 +3,11 @@ body {
     background-color: #f4f4f9;
     text-align: center;
     padding: 20px;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+    height: 100vh;           /* Takes up the full height of the viewport */
+    margin: 0;               /* Removes default margin */
 }
 
 h1 {
@@ -67,5 +72,17 @@ ul {
 
 .profile-pic {
     margin: 50px;
+    display: block;
 }
 
+#game {
+    width: 80%; /* Adjust based on desired width */
+    max-width: 960px; /* Optional: set a max width */
+    text-align: center; /* Centers text and inline elements inside the container */
+}
+
+img {
+    display: block;         /* Makes the image a block element */
+    margin-left: auto;      /* Automatically calculates the left margin */
+    margin-right: auto;     /* Automatically calculates the right margin */
+}
