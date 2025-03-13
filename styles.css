@@ -36,3 +36,21 @@ ol , ul {
 .social-link:hover {
     text-decoration: underline;
 }
+
+#about {
+    text-align: center;
+    padding: 20px;
+    display: : inline-block;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
