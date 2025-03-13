@@ -4,7 +4,6 @@ body {
     text-align: center;
     padding: 20px;
     display: flex;
-    justify-content: center; /* Centers horizontally */
     align-items: center;     /* Centers vertically */
     height: 100vh;           /* Takes up the full height of the viewport */
     margin: 0;               /* Removes default margin */
