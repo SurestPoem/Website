@@ -20,8 +20,9 @@ h1 {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    width: 90%; /* Makes sure it resizes on smaller screens */
-    max-width: 800px;
+    width: 80%; /* Wider on larger screens */
+    max-width: 900px; /* Ensures it doesn’t become too large */
+    overflow: hidden; /* Prevents images from overflowing */
 }
 
 /* Buttons */
@@ -64,6 +65,14 @@ ul {
     text-decoration: underline;
 }
 
+/* Fix Image Issues */
+img {
+    max-width: 100%; /* Ensures images never exceed their container */
+    height: auto; /* Keeps aspect ratio */
+    display: block; /* Prevents extra space under images */
+    margin: 0 auto; /* Centers images */
+}
+
 /* Profile Picture */
 .profile-pic {
     width: 150px; /* Reduce image size for mobile */
@@ -74,10 +83,11 @@ ul {
 
 /* Game Section */
 #game {
-    width: 90%;
-    max-width: 960px;
+    width: 80%;
+    max-width: 900px;
     text-align: center;
     margin: 0 auto;
+    overflow: hidden; /* Prevents elements from extending out */
 }
 
 /* Letterboxd Embed Wrapper */
@@ -90,14 +100,14 @@ ul {
     background-color: #f4f4f4;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    max-width: 800px;
+    width: 80%;
+    max-width: 900px;
 }
 
 /* Iframe (Game Container) */
 iframe {
     width: 100%;
-    max-width: 1000px;
+    max-width: 900px;
     height: 600px;
     border: 2px solid black;
 }
@@ -113,7 +123,7 @@ iframe {
     }
 
     #WebStart, #about, #game, #letterboxd-embed-wrapper-tc {
-        width: 95%;
+        width: 90%;
         padding: 10px;
     }
 
@@ -150,3 +160,4 @@ iframe {
         height: 300px;
     }
 }
+/* === END OF MEDIA QUERIES === */
