@@ -26,6 +26,7 @@ h1 {
 }
 
 ..game-container {
+    align-items: center;
     position: relative;
     width: 100%; /* Full width of the parent container */
     max-width: 800px; /* Ensures the maximum width is not exceeded */
@@ -37,6 +38,7 @@ h1 {
 }
 
 .game-container iframe {
+    align-items: center;
     position: absolute;
     width: 100%;
     height: 100%;
