@@ -25,23 +25,22 @@ h1 {
     overflow: hidden; /* Prevents images from overflowing */
 }
 
-.game-container {
+..game-container {
     position: relative;
-    width: 100%; /* Fill the width of its parent */
-    height: 0;
-    padding-bottom: 56.25%; /* Aspect ratio of 16:9 (9/16 = 0.5625) */
-    background-color: black; /* Optional, just in case there's a visual gap */
+    width: 100%; /* Full width of the parent container */
+    max-width: 800px; /* Ensures the maximum width is not exceeded */
+    height: auto;
+    padding-top: 56.25%; /* 16:9 aspect ratio (450px/800px = 0.5625) */
+    background-color: black;
+    overflow: hidden;
+    margin: 0 auto; /* Center the game */
 }
 
 .game-container iframe {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%; /* Ensures iframe takes the full width of the container */
-    height: 100%; /* Ensures iframe takes the full height of the container */
+    width: 100%;
+    height: 100%;
     border: none;
-    transform: scale(0.75); /* Scales down the game (adjust the scale factor) */
-    transform-origin: top left; /* Ensures scaling starts from the top-left corner */
 }
 
 
