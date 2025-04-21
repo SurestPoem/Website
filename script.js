@@ -8,20 +8,30 @@ function redirect() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Ensure it only affects the gallery images
     document.querySelectorAll('.gallery-grid img').forEach(img => {
         img.addEventListener('click', () => {
-            let lightbox = document.createElement('div');
+            const lightbox = document.createElement('div');
             lightbox.classList.add('lightbox');
+
             lightbox.innerHTML = `
-                <span class="close-btn">&times;</span>
-                <img src="${img.src}" alt="${img.alt}">
+                <div class="lightbox-content">
+                    <span class="close-btn">&times;</span>
+                    <img src="${img.src}" alt="${img.alt}">
+                </div>
             `;
+            
             document.body.appendChild(lightbox);
 
-            // Close the lightbox when clicking the close button
+            // Close when clicking the 'X'
             lightbox.querySelector('.close-btn').addEventListener('click', () => {
-                document.body.removeChild(lightbox);
+                lightbox.remove();
+            });
+
+            // Close when clicking outside the .lightbox-content
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) {
+                    lightbox.remove();
+                }
             });
         });
     });
