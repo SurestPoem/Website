@@ -101,14 +101,16 @@ img {
     height: auto; /* Keeps aspect ratio */
     display: block; /* Prevents extra space under images */
     margin: 0 auto; /* Centers images */
+    border-radius: 1%;
 }
 
 /* Profile Picture */
-.profile-pic {
-    width: 150px; /* Reduce image size for mobile */
+.imgtype2 {
+    width: 30%; /* Reduce image size for mobile */
     height: auto;
     margin: 20px;
-    border-radius: 50%;
+    border-radius: 5%;
+    margin: 0 auto; /* Center the image */
 }
 
 /* === MEDIA QUERIES FOR MOBILE === */
