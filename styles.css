@@ -29,31 +29,29 @@ h1 {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    width: 80%; /* Wider on larger screens */
-    max-width: 900px; /* Ensures it doesn’t become too large */
-    overflow: hidden; /* Prevents images from overflowing */
+    width: 80%; 
+    max-width: 900px;
+    overflow: hidden;
 }
 
 .game-container {
     align-items: center;
-    position: relative;
-    width: 100%; /* Full width of the parent container */
-    max-width: 800px; /* Ensures the maximum width is not exceeded */
-    height: auto;
-    padding-top: 56.25%; /* 16:9 aspect ratio (450px/800px = 0.5625) */
-    background-color: black;
+    position: relative;  /* Ensures iframe is contained */
+    width: 90%;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
     overflow: hidden;
-    margin: 0 auto; /* Center the game */
 }
 
 .game-container iframe {
-    align-items: center;
     position: absolute;
+    top: 0;  /* Align the iframe to the top of the container */
+    left: 0; /* Align the iframe to the left of the container */
     width: 100%;
     height: 100%;
     border: none;
 }
-
 
 /* Buttons */
 button {
