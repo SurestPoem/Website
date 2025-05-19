@@ -6,8 +6,6 @@
     <meta name="description" content="A practice website to help get better at html, css, javascript, for my A level Computer science exam.">
     <title>SurestPoem's Website</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
 </head>
 <body>
     <section id="WebStart">
@@ -52,9 +50,23 @@
         <li>Minecraft</li>
     </ol>
     <p>Red Dead Redemption 2 and The Last of Us 1 are both top tier masterpieces and are interchangable depending on my mood</p>
-    <p>Id also argue The Last of Us Part 2 didnt deserve the hate it got on launch, Id argue its a masterpiece, gameplay and story wise</p>
     </section>
 
+    <section id="countdown-section">
+        <h3>Time till GTA VI</h3>
+        <div id="countdown">
+            <span id="days"></span>d
+            <span id="hours"></span>h
+            <span id="minutes"></span>m
+            <span id="seconds"></span>s
+        </div>
+
+        <div id="embed-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VQRLujxTm3c?si=O2LAiuFHJE6CmKIs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+       
+    
     <div id="letterboxd-embed-wrapper-tc">Loading...</div>
     <script>
     fetch('https://lb-embed-content.bokonon.dev?username=surestpoem')
@@ -91,6 +103,10 @@
             <a href="https://www.serializd.com/user/SurestPoem" target="_blank" class="social-link">Serializd</a>
             <a href="https://backloggd.com/u/SurestPoem/" target="_blank" class="social-link">Backloggd</a>
             <a href="https://x.com/surestpoem" target="_blank" class="social-link">Twitter</a>
+        </div>
+
+        <div class="dark-mode-toggle">
+            <button id="dark-mode-button" onclick="toggleDarkMode()">Toggle Dark Mode</button>
         </div>
     </footer>
     <script src="script.js"></script>
