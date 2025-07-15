@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
             clearInterval(timerInterval);
             return;
         }
-
+        
         const seconds = Math.floor((timeDiff / 1000) % 60);
         const minutes = Math.floor((timeDiff / 1000 / 60) % 60);
         const hours = Math.floor((timeDiff / (1000 * 60 * 60)) % 24);
@@ -73,17 +73,18 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Run every second
-    const timerInterval = setInterval(countdown, 1000);
+    const timerInterval = setInterval(countdown, 1);
     countdown(); // Run immediately so the user sees it right away
 });
 
 
-  // Toggle the theme on button click
-  document.getElementById('theme-toggle').addEventListener('click', () => {
-    const current = document.body.getAttribute('data-theme');
-    const newTheme = current === 'dark' ? 'light' : 'dark';
-    
-    // Apply new theme and save it to localStorage
-    document.body.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
-  });
+document.getElementById('theme-toggle').addEventListener('click', () => {
+  const root = document.documentElement; // <html> element
+  const currentTheme = root.getAttribute('data-theme');
+
+  if (currentTheme === 'dark') {
+    root.removeAttribute('data-theme'); // Switch to light (default)
+  } else {
+    root.setAttribute('data-theme', 'dark'); // Switch to dark
+  }
+});
