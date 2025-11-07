@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Close function
             const closeLightbox = () => {
                 lightbox.remove();
-                document.removeEventListener('keydown', escHandler); // Clean up!
+                document.removeEventListener('keydown', escHandler);
             };
 
             // Escape key handler
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    const targetDate = new Date('2026-05-26T23:59:59'); // Change to your desired date
+    const targetDate = new Date('2026-11-19T23:59:59');
 
     const countdown = () => {
         const now = new Date();
